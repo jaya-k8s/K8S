@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: test
+  name: test
+spec:
+  containers:
+    - image: jayasurya/pipelinetest:v6
+      name: test
+      resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+
+---
